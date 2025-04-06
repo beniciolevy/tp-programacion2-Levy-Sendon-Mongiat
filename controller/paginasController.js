@@ -1,23 +1,28 @@
+const usuarioLogueado = require("../db/profile")
+
 const paginasController = {
     index: function(req,res){
-        res.render(indexCopy)
+        res.render("index copy")
     },
 
     login: function(req,res){
-        res.render(login)
+        res.render("login")
     },
 
-    product: function(req,res){
-        res.render(product)
-    },
     register: function(req,res){
-        res.render(register)
+        res.render("register")
     },
 
     profile: function(req,res){
-        res.render(profile)
+        res.render("profile", {usuario: usuarioLogueado})
     },
+    
 
+     
+
+      searchResults: function (req, res) {
+        res.render('search-results');
+      },
 }
 
 module.exports = paginasController;
