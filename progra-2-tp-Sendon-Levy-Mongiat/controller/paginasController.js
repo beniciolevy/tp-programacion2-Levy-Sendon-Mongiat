@@ -1,4 +1,4 @@
-const usuarioLogueado = require("../db/profile")
+const usuarioLogueado = require("../db/index")
 
 const paginasController = {
     index: function(req,res){
