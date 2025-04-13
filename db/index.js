@@ -30,8 +30,7 @@ let usuario = {
 
 
 
-
-module.exports = usuario;
+module.exports = { usuario, producto };
 
 
 
