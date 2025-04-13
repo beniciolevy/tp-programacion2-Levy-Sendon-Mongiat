@@ -1,5 +1,5 @@
-const usuarioLogueado = require("../db/profile"); 
-const productos = require("../db/product")
+const usuario = require("../db/index"); 
+const productos = require("../db/index")
 
 const productosController = {
     product: function(req,res){
@@ -7,10 +7,7 @@ const productosController = {
     },
 
     addProduct: function (req, res) {
-        res.render('product-add', {usuario: usuarioLogueado} );
+        res.render('product-add', {usuario} );
       },
-
 }
-
-
 module.exports = productosController;

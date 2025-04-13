@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var paginasRouter = require('./routes/paginas');
 var productsRouter = require("./routes/product")
 
@@ -22,7 +21,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use('/', indexRouter);  Por ahora lo comento para eliminar ese index
-app.use('/users', usersRouter);
 app.use('/', paginasRouter);
 app.use("/product", productsRouter)
 
