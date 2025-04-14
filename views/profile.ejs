@@ -62,12 +62,12 @@
 			</div>
 
 			
-			<!-- Show mis productos -->
+			<!-- Show the "ultimos" products -->
 			<% for (let i = 0; i < productos.length; i++) {
 				const producto = productos[i]; %>
 		   <div class="col-12 col-sm-6 col-lg-3">
 			   <section class="product-box">
-				   <a href="/product">
+				   <a href="/product/id/<%= producto.id  %>">
 					   <figure class="product-box_image">
 						   <img src="<%= producto.imagen %>" alt="<%= producto.nombre %>"/>
 					   </figure>

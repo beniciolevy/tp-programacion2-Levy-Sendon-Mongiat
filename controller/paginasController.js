@@ -1,9 +1,6 @@
-const {productos, usuario} = require("../db/index")
+const datos = require("../db/index")
 
 const paginasController = {
-    index: function (req, res) {
-        res.render("index", { productos }) 
-    },
     login: function (req, res) {
         res.render("login") 
     },
@@ -11,10 +8,10 @@ const paginasController = {
         res.render("register") 
     },
     profile: function (req, res) {
-        res.render("profile", { usuario, productos })
+        res.render("profile", { usuario: datos.usuario, productos: datos.productos })
     },
     searchResults: function (req, res) {
-        res.render('search-results', { usuario }); 
+        res.render('search-results', { usuario: datos.usuario}); 
     },
 }
 
