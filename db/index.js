@@ -23,7 +23,7 @@ let productos = [
 
 {   id: 2,
     imagen: "/images/products/bmw-x6m.jpg",
-    nombre: "BMW X6M.",
+    nombre: "BMW X6M",
     descripcion: "SUV coupé, potente y con un diseño agresivo.",
     comentarios: [
         {
@@ -59,7 +59,7 @@ let productos = [
 },
 {   id: 4,
     imagen: "/images/products/G-class-Rendez.jpg",
-    nombre: "Mercedes-Benz Clase G",
+    nombre: "Mercedes Clase G",
     descripcion: "SUV icónico, robusto y elegante.",
     comentarios: [
         {
@@ -97,7 +97,7 @@ let productos = [
 
 {   id: 6,
     imagen: "/images/products/bmw-x6m.jpg",
-    nombre: "BMW X6M.",
+    nombre: "BMW X6M",
     descripcion: "SUV coupé, potente y con un diseño agresivo.",
     comentarios: [
         {
@@ -133,7 +133,7 @@ let productos = [
 },
 {   id: 8,
     imagen: "/images/products/G-class-Rendez.jpg",
-    nombre: "Mercedes-Benz Clase G",
+    nombre: "Mercedes Clase G",
     descripcion: "SUV icónico, robusto y elegante.",
     comentarios: [
         {
@@ -172,7 +172,7 @@ let productos = [
 
 {   id: 10,
     imagen: "/images/products/bmw-x6m.jpg",
-    nombre: "BMW X6M.",
+    nombre: "BMW X6M",
     descripcion: "SUV coupé, potente y con un diseño agresivo.",
     comentarios: [
         {
