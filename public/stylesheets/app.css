@@ -40,6 +40,10 @@ ol {
   margin: 0;
   padding: 0;
 }
+.titulo{
+align-items: center;
+}
+
 
 a {
   color: #b200c2;

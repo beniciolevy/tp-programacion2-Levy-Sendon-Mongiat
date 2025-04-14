@@ -2,7 +2,7 @@ const {productos, usuario} = require("../db/index")
 
 const paginasController = {
     index: function (req, res) {
-        res.render("index copy", { productos }) 
+        res.render("index", { productos }) 
     },
     login: function (req, res) {
         res.render("login") 

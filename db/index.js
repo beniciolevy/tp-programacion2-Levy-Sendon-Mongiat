@@ -201,7 +201,7 @@ let usuario = {
     fecha: "08/04/2025",
     dni: 44123771,
     nombre: "Genaro",
-    foto: "/images/users/foto-usuario.jpg"
+    foto: "/images/users/foto-miguel.jpg"
 }
 
 
