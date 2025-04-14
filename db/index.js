@@ -3,7 +3,7 @@
 let productos = [
     {
     id: 1,
-    imagen: "/images/products/img-cafetera-moulinex.jpg",
+    imagen: "/images/products/bmw-x6m.jpg",
     nombre: "Cafetera Moulinex",
     descripcion: "Es una cafetera fácil de usar y express.",
     comentarios: [
@@ -59,7 +59,7 @@ let productos = [
 },
 {   id: 4,
     imagen: "/images/products/img-tv-samsung-smart.jpg",
-    nombre: "Cafetera Moulinex",
+    nombre: "Smart TV",
     descripcion: "Television Smart con resolucion 4k.",
     comentarios: [
         {
@@ -133,7 +133,7 @@ let productos = [
 },
 {   id: 8,
     imagen: "/images/products/img-tv-samsung-smart.jpg",
-    nombre: "Cafetera Moulinex",
+    nombre: "Smart TV",
     descripcion: "Television Smart con resolucion 4k.",
     comentarios: [
         {

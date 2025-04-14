@@ -24,12 +24,14 @@ body {
   min-height: 100vh;
   margin: 0;
   font-size: 10px;
+  
+  
 }
 
 body {
-  font-family: var(--base-font-family);
+  font-family: "Mulish", sans-serif;
   font-weight: 300;
-  background-color: var(--light-gray);
+  background-color: #615f5f;
 }
 
 ul,
@@ -40,6 +42,7 @@ ol {
 }
 
 a {
+  color: #b200c2;
   display: inline-block;
   text-decoration: none;
   color: inherit;
@@ -73,10 +76,12 @@ hr {
 
 .main-header_home-link,
 .main-header_credit-link {
+  color: #b200c2;
   display: block;
 }
 
 .main-header_credit-link {
+  
   font-size: 1.5em;
   margin-top: 20px;
   text-align: center;
@@ -145,6 +150,7 @@ hr {
 
 .left-navbar a,
 .right-navbar a {
+  color: #b200c2;
   display: block;
   padding: 5px 0;
   border-bottom: solid 1px var(--gray);
@@ -169,20 +175,21 @@ hr {
 }
 
 .products-title {
+  font-family: "Noto Sans", sans-serif;
   font-size: 2.4em;
   font-weight: 400;
-  color: var(--gray);
+  color:rgb(255, 230, 0);
 }
 
 .product-box {
-  background-color: #ffffff;
-  border-radius: 5px;
+  background-color:rgb(233, 220, 112);
   overflow: hidden;
   transition: 300ms;
   margin: 20px 0;
 }
 
 .product-box a {
+
   display: block;
 }
 
@@ -317,6 +324,7 @@ hr {
 }
 
 .product-detail-title {
+  font-family: "Noto Sans", sans-serif;
   font-weight: 400;
   font-size: 2.8em;
 }
@@ -465,6 +473,7 @@ textarea.form-input {
 }
 
 .main-title{
+  font-family: "Noto Sans", sans-serif;
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -480,6 +489,7 @@ textarea.form-input {
 /*====== Media-Queries ======*/
 @media (min-width: 768px) {
   .main-header_credit-link {
+
     margin-top: 0;
     text-align: right;
   }
