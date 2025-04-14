@@ -21,7 +21,7 @@ let datos = {
                 },
                 {
                     nombre: "Jose",
-                    texto: "Muy buen motor",
+                    texto: "Muy buen motor.",
                     imagen: "/images/users/foto-jose.jpg"
                 }
 
@@ -45,7 +45,7 @@ let datos = {
                 },
                 {
                     nombre: "Jose",
-                    texto: "Muy buen motor",
+                    texto: "Muy comoda",
                     imagen: "/images/users/foto-jose.jpg"
                 }
 
@@ -69,7 +69,7 @@ let datos = {
                 },
                 {
                     nombre: "Jose",
-                    texto: "Muy buen motor",
+                    texto: "Muy buena combinacion de colores.",
                     imagen: "/images/users/foto-jose.jpg"
                 }
 
@@ -93,7 +93,7 @@ let datos = {
                 },
                 {
                     nombre: "Jose",
-                    texto: "Muy buen motor",
+                    texto: "Excelente vehiculo.",
                     imagen: "/images/users/foto-jose.jpg"
                 }
 
