@@ -9,12 +9,12 @@ let productos = [
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Increíble rendimiento con elegancia Ferrari.",
+            texto: "tiene un increible rendimiento con la elegancia de Ferrari",
             imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Precio excesivo para un SUV.",
+            texto: "El precio me parecio bastante caro para ser SUV.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
@@ -24,16 +24,16 @@ let productos = [
 {   id: 2,
     imagen: "/images/products/bmw-x6m.jpg",
     nombre: "BMW X6M",
-    descripcion: "SUV coupé, potente y con un diseño agresivo.",
+    descripcion: "SUV muy interesante, potente y con un diseño bastante agresivo.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Prestaciones deportivas con lujo total.",
+            texto: "Me encanta, muy lujosa y de un hermoso interior.",
             imagen: "/images/users/foto-miguel.jpg",
         },
         {
             nombre: "Pato",
-            texto: "Los acabados del interior no estan a la altura.",
+            texto: "Le falta potencia para el precio que sale.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
@@ -46,12 +46,12 @@ let productos = [
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Combina diseño con potencia, sin duda mi auto favorito.",
+            texto: "Combina diseño con potencia, sin dudas mi auto favorito.",
             imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Muy bueno!",
+            texto: "Me encanto!",
             imagen:"/images/users/foto-pato.jpg"
         }
     ]
@@ -60,16 +60,16 @@ let productos = [
 {   id: 4,
     imagen: "/images/products/G-class-Rendez.jpg",
     nombre: "Mercedes Clase G",
-    descripcion: "SUV icónico, robusto y elegante.",
+    descripcion: "SUV iconico, robusto y elegante.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Lujo extremo con presencia imponente.",
+            texto: "Mercedes se lucio con esta clase de auto.",
             imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Demasiado rígido para ciudad.",
+            texto: "Puede ser bastante llamativo y duro para manejar en CABA.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
@@ -83,12 +83,12 @@ let productos = [
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Increíble rendimiento con elegancia Ferrari.",
+            texto: "tiene un increible rendimiento con la elegancia de Ferrari.",
             imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Precio excesivo para un SUV.",
+            texto: "El precio me parecio bastante caro para ser SUV.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
@@ -102,12 +102,12 @@ let productos = [
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Prestaciones deportivas con lujo total.",
-            imagen: "/images/users/foto-miguel.jpg"
+            texto: "Me encanta, muy lujosa y de un hermoso interior.",
+            imagen: "/images/users/foto-miguel.jpg",
         },
         {
             nombre: "Pato",
-            texto: "Los acabados del interior no estan a la altura.",
+            texto: "Le falta potencia para el precio que sale.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
@@ -134,16 +134,16 @@ let productos = [
 {   id: 8,
     imagen: "/images/products/G-class-Rendez.jpg",
     nombre: "Mercedes Clase G",
-    descripcion: "SUV icónico, robusto y elegante.",
+    descripcion: "SUV iconico, robusto y elegante.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Lujo extremo con presencia imponente.",
+            texto: "Mercedes se lucio con esta clase de auto.",
             imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Demasiado rígido para ciudad.",
+            texto: "Puede ser bastante llamativo y duro para manejar en CABA.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
@@ -158,12 +158,12 @@ let productos = [
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Increíble rendimiento con elegancia Ferrari.",
+            texto: "tiene un increible rendimiento con la elegancia de Ferrari.",
             imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Precio excesivo para un SUV.",
+            texto: "El precio me parecio bastante caro para ser SUV.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
@@ -177,12 +177,12 @@ let productos = [
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Prestaciones deportivas con lujo total.",
-            imagen: "/images/users/foto-miguel.jpg"
+            texto: "Me encanta, muy lujosa y de un hermoso interior.",
+            imagen: "/images/users/foto-miguel.jpg",
         },
         {
             nombre: "Pato",
-            texto: "Los acabados del interior no estan a la altura.",
+            texto: "Le falta potencia para el precio que sale.",
             imagen: "/images/users/foto-pato.jpg"
         }
     ]
