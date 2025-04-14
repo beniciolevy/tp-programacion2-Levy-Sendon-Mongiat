@@ -1,13 +1,13 @@
-const {productos, usuario } = require("../db/index"); 
+const datos = require("../db/index"); 
 
 
 const productosController = {
     product: function(req,res){
-        res.render("product", {productos})
+        res.render("product", {productos: datos.productos})
     },
 
     addProduct: function (req, res) {
-        res.render('product-add', {usuario} );
+        res.render('product-add', {usuario: datos.usuario} );
       },
 
     productDetail: function(req,res){
@@ -15,9 +15,9 @@ const productosController = {
        
         let producto
 
-        for (let i = 0; i < productos.length; i++) {
-            if (productos[i].id == id) {
-                producto = productos[i];
+        for (let i = 0; i < datos.productos.length; i++) {
+            if (datos.productos[i].id == id) {
+                producto = datos.productos[i];
                 break; 
             }
         }        res.render("product", {producto});
