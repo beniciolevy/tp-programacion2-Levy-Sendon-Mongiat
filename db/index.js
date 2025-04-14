@@ -1,5 +1,5 @@
 
-//Base de datos de los productos
+//Modulo de datos de los productos
 let productos = [
     {
     id: 1,
@@ -58,7 +58,7 @@ let productos = [
 
 },
 {   id: 4,
-    imagen: "/images/products/G-class-Rendez.jpg",
+    imagen: "/images/products/gwagon.jpg",
     nombre: "Mercedes Clase G",
     descripcion: "SUV iconico, robusto y elegante.",
     comentarios: [
@@ -132,7 +132,7 @@ let productos = [
 
 },
 {   id: 8,
-    imagen: "/images/products/G-class-Rendez.jpg",
+    imagen: "/images/products/gwagon.jpg",
     nombre: "Mercedes Clase G",
     descripcion: "SUV iconico, robusto y elegante.",
     comentarios: [
@@ -194,7 +194,7 @@ let productos = [
 
 ]
 
-//Base de datos del usuario
+//Modulo de datos del usuario
 let usuario = {
     email: "genarogonzales@gmail.com",
     password: "1234",
@@ -207,10 +207,7 @@ let usuario = {
 
 
 
-module.exports = {
-    usuario,
-    productos
-}
+module.exports = {usuario, productos}
 
 
 
