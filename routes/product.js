@@ -8,4 +8,5 @@ router.get("/add", productosController.addProduct);
 
 router.get("/:id", productosController.productDetail)
 
+
 module.exports = router;
