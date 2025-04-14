@@ -1,6 +1,6 @@
-CREATE SCHEMA proyecto_db;
+CREATE SCHEMA proyectoTp;
 
-USE proyecto_db;
+USE proyectoTp;
 
 CREATE TABLE usuarios (
 	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
