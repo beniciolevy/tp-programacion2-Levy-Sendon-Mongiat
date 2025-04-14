@@ -443,6 +443,27 @@ hr {
   font-size: 1.6em;
   margin: 10px 0;
 }
+.form-login {
+  max-width: 400px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.form-register {
+
+  max-width: 400px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.form-agregarPoducto{
+  max-width: 400px;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
 
 .form-input {
   display: block;
