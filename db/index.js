@@ -3,148 +3,148 @@
 let productos = [
     {
     id: 1,
-    imagen: "/images/products/bmw-x6m.jpg",
-    nombre: "Cafetera Moulinex",
-    descripcion: "Es una cafetera fácil de usar y express.",
+    imagen: "/images/products/ferrari-purosangueferrari-pursosangue-test-2023-front-links-11677768729-8e1191c3.jpg", 
+    nombre: "Ferrari purosangue",
+    descripcion: "SUV deportivo, potente y lujoso.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Muy buena la cafetera, me encantaron los colores.",
-            imagen: "foto-miguel.png"
+            texto: "Increíble rendimiento con elegancia Ferrari.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Precio excesivo!",
-            imagen: "foto-pato.png"
+            texto: "Precio excesivo para un SUV.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
 },
 
 {   id: 2,
-    imagen: "/images/products/img-macbook-pro-2019.jpg",
-    nombre: "Macbook pro 2019",
-    descripcion: "Computadora para programar, navegar, eficiente.",
+    imagen: "/images/products/bmw-x6m.jpg",
+    nombre: "BMW X6M.",
+    descripcion: "SUV coupé, potente y con un diseño agresivo.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Muy buena compu, muy rapida",
-            imagen: "/images/users/default-image.png"
+            texto: "Prestaciones deportivas con lujo total.",
+            imagen: "/images/users/foto-miguel.jpg",
         },
         {
             nombre: "Pato",
-            texto: "Bastante cara",
-            imagen: "/images/users/default-image.png"
+            texto: "Los acabados del interior no estan a la altura.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
 },
 {   id: 3,
-    imagen: "/images/products/img-samsung-galaxy-s10.jpg",
-    nombre: "Samsung Galaxy S10",
-    descripcion: "Telefono de ultima generacion con AI.",
+    imagen: "/images/products/Lamborghini_Urus_.jpg",
+    nombre: "Lamborghini Urus",
+    descripcion: "SUV Lamborghini, veloz y llamativo.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Me encanto! Lo uso todos los dias",
-            imagen: "/images/users/default-image.png"
+            texto: "Combina diseño con potencia, sin duda mi auto favorito.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
             texto: "Muy bueno!",
-            imagen:"/images/users/default-image.png"
+            imagen:"/images/users/foto-pato.jpg"
         }
     ]
 
 },
 {   id: 4,
-    imagen: "/images/products/img-tv-samsung-smart.jpg",
-    nombre: "Smart TV",
-    descripcion: "Television Smart con resolucion 4k.",
+    imagen: "/images/products/G-class-Rendez.jpg",
+    nombre: "Mercedes-Benz Clase G",
+    descripcion: "SUV icónico, robusto y elegante.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Funciona muy bien.",
-            imagen: "/images/users/default-image.png"
+            texto: "Lujo extremo con presencia imponente.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Bastante cara!",
-            imagen: "/images/users/default-image.png"
+            texto: "Demasiado rígido para ciudad.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
 },
 
 {   id: 5,
-    imagen: "/images/products/img-cafetera-moulinex.jpg",
-    nombre: "Cafetera Moulinex",
-    descripcion: "Es una cafetera fácil de usar y express.",
+    imagen: "/images/products/ferrari-purosangueferrari-pursosangue-test-2023-front-links-11677768729-8e1191c3.jpg",
+    nombre: "Ferrari purosangue",
+    descripcion: "SUV deportivo, potente y lujoso.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Muy buena la cafetera, me encantaron los colores.",
-            imagen: "foto-miguel.png"
+            texto: "Increíble rendimiento con elegancia Ferrari.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Precio excesivo!",
-            imagen: "foto-pato.png"
+            texto: "Precio excesivo para un SUV.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
 },
 
 {   id: 6,
-    imagen: "/images/products/img-macbook-pro-2019.jpg",
-    nombre: "Macbook pro 2019",
-    descripcion: "Computadora para programar, navegar, eficiente.",
+    imagen: "/images/products/bmw-x6m.jpg",
+    nombre: "BMW X6M.",
+    descripcion: "SUV coupé, potente y con un diseño agresivo.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Muy buena compu, muy rapida",
-            imagen: "/images/users/default-image.png"
+            texto: "Prestaciones deportivas con lujo total.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Bastante cara",
-            imagen: "/images/users/default-image.png"
+            texto: "Los acabados del interior no estan a la altura.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
 },
 {   id: 7,
-    imagen: "/images/products/img-samsung-galaxy-s10.jpg",
-    nombre: "Samsung Galaxy S10",
-    descripcion: "Telefono de ultima generacion con AI.",
+    imagen: "/images/products/Lamborghini_Urus_.jpg",
+    nombre: "Lamborghini Urus",
+    descripcion: "SUV Lamborghini, veloz y llamativo.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Me encanto! Lo uso todos los dias",
-            imagen: "/images/users/default-image.png"
+            texto: "Combina diseño con potencia, sin duda mi auto favorito",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
             texto: "Muy bueno!",
-            imagen:"/images/users/default-image.png"
+            imagen:"/images/users/foto-pato.jpg"
         }
     ]
 
 },
 {   id: 8,
-    imagen: "/images/products/img-tv-samsung-smart.jpg",
-    nombre: "Smart TV",
-    descripcion: "Television Smart con resolucion 4k.",
+    imagen: "/images/products/G-class-Rendez.jpg",
+    nombre: "Mercedes-Benz Clase G",
+    descripcion: "SUV icónico, robusto y elegante.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Funciona muy bien.",
-            imagen: "/images/users/default-image.png"
+            texto: "Lujo extremo con presencia imponente.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Bastante cara!",
-            imagen: "/images/users/default-image.png"
+            texto: "Demasiado rígido para ciudad.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
@@ -152,38 +152,38 @@ let productos = [
 
 
 {   id: 9,
-    imagen: "/images/products/img-cafetera-moulinex.jpg",
-    nombre: "Cafetera Moulinex",
-    descripcion: "Es una cafetera fácil de usar y express.",
+    imagen: "/images/products/ferrari-purosangueferrari-pursosangue-test-2023-front-links-11677768729-8e1191c3.jpg",
+    nombre: "Ferrari purosangue",
+    descripcion: "SUV deportivo, potente y lujoso.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Muy buena la cafetera, me encantaron los colores.",
-            imagen: "foto-miguel.png"
+            texto: "Increíble rendimiento con elegancia Ferrari.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Precio excesivo!",
-            imagen: "foto-pato.png"
+            texto: "Precio excesivo para un SUV.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
 },
 
 {   id: 10,
-    imagen: "/images/products/img-macbook-pro-2019.jpg",
-    nombre: "Macbook pro 2019",
-    descripcion: "Computadora para programar, navegar, eficiente.",
+    imagen: "/images/products/bmw-x6m.jpg",
+    nombre: "BMW X6M.",
+    descripcion: "SUV coupé, potente y con un diseño agresivo.",
     comentarios: [
         {
             nombre: "Miguel",
-            texto: "Muy buena compu, muy rapida",
-            imagen: "/images/users/default-image.png"
+            texto: "Prestaciones deportivas con lujo total.",
+            imagen: "/images/users/foto-miguel.jpg"
         },
         {
             nombre: "Pato",
-            texto: "Bastante cara",
-            imagen: "/images/users/default-image.png"
+            texto: "Los acabados del interior no estan a la altura.",
+            imagen: "/images/users/foto-pato.jpg"
         }
     ]
 
