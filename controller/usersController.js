@@ -1,6 +1,6 @@
 const datos = require("../db/index")
 
-const paginasController = {
+const usersController = {
     login: function (req, res) {
         res.render("login") 
     },
@@ -15,4 +15,4 @@ const paginasController = {
     },
 }
 
-module.exports = paginasController;
+module.exports = usersController;

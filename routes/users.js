@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-let paginasController = require("../controller/paginasController")
+let usersController = require("../controller/usersController")
 
-router.get('/profile', paginasController.profile);
-router.get('/login', paginasController.login);
-router.get('/register', paginasController.register);
-router.get('/search-results', paginasController.searchResults);
+router.get('/profile', usersController.profile);
+router.get('/login', usersController.login);
+router.get('/register', usersController.register);
+router.get('/search-results', usersController.searchResults);
 
 
 module.exports = router;
