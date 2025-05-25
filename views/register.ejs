@@ -21,57 +21,46 @@
 	<!-- Header -->
 	<%- include("./partials/header") %>
 
-	<!-- /Header -->
+		<!-- /Header -->
 
-	<!-- Novedades -->
-	<div class="container products-wrapper">
-		<div class="row">
-			<div class="col-12">
-				<h2 class="products-title">Registrate</h2>
-			</div>
-			<!-- Show the "ultimos" products -->
-			
-				<form class="form-register" action="/register" method="post">
-			<div>
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email" required>
-			</div>
+		<!-- Novedades -->
+		<div class="container products-wrapper">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="products-title">Registrate</h2>
+				</div>
+				<!-- Show the "ultimos" products -->
 
-			<div>
-				<label for="usuario">Usuario:</label>
-				<input type="text" name="usuario" id="usuario" required>
-			</div>
+				<form class="form-register" action="/users/newuser" method="POST">
+					<div>
+						<label for="usuario">Usuario:</label>
+						<input type="text" name="usuario" id="usuario" required>
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" required>
+					</div>
 
-			<div>
-				<label for="contraseña">Contraseña:</label>
-				<input type="password" name="contraseña" id="contraseña" required>
-			</div>
-
-			<div>
-				<label for="fechaNacimiento">Fecha de nacimiento:</label>
-				<input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
-			</div>
-			<div>
-				<label for="documento">Documento:</label>
-				<input type="number" name="documento" id="documento" required>
-			</div>
-			<div>
-				<label for="fotoDePerfil">Foto de perfil:</label>
-				<input type="text" name="fotoDePerfil" id="fotoDePerfil" required>
-			</div>
-
-			<div>
-				<button type="submit">Registrarse</button>
-			</div>
+					<div>
+						<label for="contrasenia">Contraseña:</label>
+						<input type="password" name="contrasenia" id="contrasenia" required>
+					</div>
+					<div>
+						<label for="fechaNacimiento">Fecha de nacimiento:</label>
+						<input type="date" name="fechaNacimiento" id="fechaNacimiento" required>
+					</div>
+					<div>
+						<button type="submit">Registrarse</button>
+					</div>
 
 
-		</form>
-		
+				</form>
 
 
-	<!-- footer -->
-	<%- include("./partials/footer") %>
-	<!-- /footer -->
+
+				<!-- footer -->
+				<%- include("./partials/footer") %>
+					<!-- /footer -->
 </body>
 
 </html>
