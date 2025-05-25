@@ -15,12 +15,14 @@ const usersController = {
                 if (usuarioExistente) {
                     return res.render("register", { error: "El email ya está registrado." });
                 }
-                var passEncriptada = bcrypt.hashSync(req.body.contrasenia, 10);
+                let passEncriptada = bcrypt.hashSync(req.body.contrasenia, 10);
                 db.Usuario.create({
                     nombre: req.body.nombre,
                     email: req.body.email,
                     contrasenia: passEncriptada,
-                    fechaNacimiento: req.body.fechaNacimiento,
+                    fecha_nacimiento: req.body.fecha_nacimiento,
+                    dni: req.body.dni,
+                    fotoPerfil: req.body.fotoPerfil
                 })
                 .then(function () {
                     res.redirect("/users/login");
