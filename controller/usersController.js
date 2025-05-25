@@ -17,10 +17,9 @@ const usersController = {
                 }
                 let passEncriptada = bcrypt.hashSync(req.body.contrasenia, 10);
                 db.Usuario.create({
-                    nombre: req.body.nombre,
                     email: req.body.email,
                     contrasenia: passEncriptada,
-                    fecha_nacimiento: req.body.fecha_nacimiento,
+                    fechaNacimiento: req.body.fechaNacimiento,
                     dni: req.body.dni,
                     fotoPerfil: req.body.fotoPerfil
                 })
