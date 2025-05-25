@@ -30,14 +30,14 @@
 				<h2 class="products-title">Ingresar</h2>
 			</div>
 			<!-- Show the "ultimos" products -->
-			<form class="form-login"    action="/login" method="get">
+			<form class="form-login" action="/users/processLogin" method="POST">
 				<div>
 					<label for="usuario">Usuario:</label>
-					<input type="email" name="usuario" id="usuario" required>
+					<input type="email" name="emailLog" id="usuario" required>
 				</div>
 				<div>
 					<label for="contraseña">Contraseña:</label>
-					<input type="password" name="password" id="recordarme" required>
+					<input type="password" name="passLog" id="recordarme" required>
 				</div>
 
 				<div>

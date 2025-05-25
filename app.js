@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var productsRouter = require("./routes/product")
+const session = require('express-session');
 
 var app = express();
 
@@ -19,6 +20,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(session({
+  secret: "claveSecreta",
+  resave: false,
+  saveUninitialized: true
+}));
 
 // app.use('/', indexRouter);  Por ahora lo comento para eliminar ese index
 app.use('/', indexRouter);
@@ -40,5 +47,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
 
 module.exports = app;
