@@ -10,28 +10,30 @@ const usersController = {
         res.render("login")
     },
     processLogin: function (req, res) {
-        db.Usuario.findOne({
-            where: { email: req.body.emailLog }
-        })
+        var email = req.body.emailLog;
+        var password = req.body.passLog;
+        var recordarme = req.body.recordarme;
+
+        db.Usuario.findOne({ where: { email: email } })
             .then(function (usuario) {
-                if (!usuario) {
+                if (usuario == undefined) {
                     return res.render("login", { error: "El email no está registrado." });
                 }
-                let passwordCorrecta = bcrypt.compareSync(req.body.passLog, usuario.contrasenia);
-                if (!passwordCorrecta) {
-                    return res.render("login", { error: "La contraseña es incorrecta." });
+                if (usuario.email == email) {
+                    var passwordValida = bcrypt.compareSync(password, usuario.contrasenia);
+                    if (passwordValida == true) {
+                        req.session.usuario = usuario;
+
+                        if (recordarme) {
+                            res.cookie("usuario", usuario.email, { maxAge: 60000000 });
+                        }
+                    }
                 }
-                req.session.usuario = usuario;
-                if (req.body.recordarme != undefined) {
-                    res.cookie("usuario", req.session.usuario, { maxAge: 1000 * 60 * 5 });
-                }
-                res.redirect("/");
+                return res.redirect("/");
             })
             .catch(function (error) {
                 console.log(error);
-                res.render("login", { error: "Error en la base de datos." });
             });
-
 
     },
     register: function (req, res) {
@@ -41,7 +43,7 @@ const usersController = {
         db.Usuario.findOne({ where: { email: req.body.email } })
             .then(function (usuarioExistente) {
                 if (usuarioExistente) {
-                    res.render('register', {error: "el usuario ya existe"})
+                    res.render('register', { error: "el usuario ya existe" })
                 }
                 let passEncriptada = bcrypt.hashSync(req.body.contrasenia, 10);
                 db.Usuario.create({
@@ -75,11 +77,11 @@ const usersController = {
                 console.log("Error al cerrar sesión:", error);
                 return res.redirect("/users/profile");
             }
-    
+
             if (req.cookies.usuario != undefined) {
                 res.clearCookie("usuario");
             }
-    
+
             return res.redirect("/users/login");
         });
     }

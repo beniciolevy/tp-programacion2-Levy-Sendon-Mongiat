@@ -17,8 +17,12 @@
 </head>
 <body>
 	<!-- Header -->
-	 <%- include("./partials/header") %>
-
+	<% if (usuario != undefined) { %>
+		<%- include("./partials/headerLogueado", { usuario: usuario }) %>
+	  <% } else { %>
+		<%- include("./partials/header") %>
+	  <% } %>
+	  
 	<!-- /Header -->
 	
 	<!-- Banner -->

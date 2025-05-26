@@ -1,11 +1,12 @@
-const datos = require("../db/index")
+const datos = require("../db/index");
 
-
-
-const indexController = { 
+const indexController = {
     index: function (req, res) {
-    res.render("index", { productos: datos.productos }) 
-},
-}
+        res.render("index", {
+            productos: datos.productos,
+            usuario: req.session.usuario
+        });
+    }
+};
 
-module.exports = indexController
+module.exports = indexController;
