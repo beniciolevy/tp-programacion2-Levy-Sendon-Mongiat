@@ -17,19 +17,28 @@
 </head>
 <body>
 	<!-- Header -->
-	<%- include("./partials/headerLogueado") %>
-
+	<% if (usuario != undefined) { %>
+		<%- include("./partials/headerLogueado", { usuario: usuario }) %>
+	  <% } else { %>
+		<%- include("./partials/header") %>
+	  <% } %>
+	  
 	<!-- /Header -->
 
 	<!-- Datos del usuario -->
 	<section class="info-usuario container products-wrapper">
 		<div class="row">
+		<%	if (usuario) { %>
 			<div class="img-container offset-3 col-2">
-				<img src=<%=usuario.foto%> alt="foto de perfil" class="foto-perfil">
+				<% if (usuario.fotoPerfil){ %>
+					<img src=<%=usuario.fotoPerfil%> alt="foto de perfil" class="foto-perfil">
+				<% } else {%>
+					<img src="/images/users/default-image.png" alt="foto por defecto" class="foto-perfil">
+				<% } %>
 			</div>
 			<div class="data-container col-6">
 				<div class="d-flex align-items-center ">
-					<h1 class="main-title"><%=usuario.nombre%>
+					<h1 class="main-title"><%=usuario.usuario%>
 						<a href="/profile-edit">
 							<i class="fas fa-cog"></i>
 						</a>
@@ -50,6 +59,9 @@
 					</ul>
 				</div>
 			</div>
+		<% } else { %>
+				<p>No estas logueado</p>
+		<% } %>
 		</div>
 	</section>
 	<!-- /Datos del usuario -->

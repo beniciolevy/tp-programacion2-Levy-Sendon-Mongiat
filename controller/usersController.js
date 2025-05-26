@@ -69,11 +69,13 @@ const usersController = {
                 console.log(error);
             });
     },
+    // Controlador de profile.ejs
     profile: function (req, res) {
-        res.render("profile", { usuario: null, productos: [] })
+        res.render("profile", { usuario: req.session.usuario, productos: [] })
     },
+    // Controlador de barra de busqueda 
     searchResults: function (req, res) {
-        res.render('search-results', { usuario: null });
+        res.render('search-results', { usuario: req.session.usuario });
     },
     logout: function (req, res) {
         req.session.destroy(function (error) {

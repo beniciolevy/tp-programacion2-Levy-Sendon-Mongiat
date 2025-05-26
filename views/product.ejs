@@ -21,8 +21,13 @@
 	</head>
 	<body>
 		<!-- Header -->
-		
+	<% if (usuario != undefined) { %>
+		<%- include("./partials/headerLogueado", { usuario: usuario }) %>
+	  <% } else { %>
 		<%- include("./partials/header") %>
+	  <% } %>
+	  
+	<!-- /Header -->
 
 		<!-- product detail -->
 		<div class="container products-wrapper">
