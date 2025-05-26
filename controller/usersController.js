@@ -69,6 +69,22 @@ const usersController = {
     searchResults: function (req, res) {
         res.render('search-results', { usuario: null });
     },
+    logout: function (req, res) {
+        req.session.destroy(function (error) {
+            if (error) {
+                console.log("Error al cerrar sesión:", error);
+                return res.redirect("/users/profile");
+            }
+    
+            if (req.cookies.usuario != undefined) {
+                res.clearCookie("usuario");
+            }
+    
+            return res.redirect("/users/login");
+        });
+    }
 }
+
+
 
 module.exports = usersController;
