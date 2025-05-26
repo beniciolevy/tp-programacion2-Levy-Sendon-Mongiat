@@ -4,6 +4,7 @@ USE proyectoTp;
 
 CREATE TABLE usuarios (
 	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    usuario VARCHAR(100) NOT NULL UNIQUE,
     email VARCHAR(100) NOT NULL UNIQUE,
     contrasenia VARCHAR(255) NOT NULL,
     fechaNacimiento DATE NOT NULL,
@@ -40,11 +41,11 @@ CREATE TABLE comentarios(
 );
 
 INSERT INTO usuarios
-VALUES (DEFAULT, "genarogonzales@gmail.com", "1234", "2005-05-05", '44123771',"/images/users/foto-genaro.jpg",DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "miguel@gmail.com", "12345", "1985-08-20", "30222333", "/images/users/foto-miguel.jpg", DEFAULT, DEFAULT, DEFAULT),
-(DEFAULT, "pato@gmail.com", "123456", "1992-01-15", "30333444", "/images/users/foto-pato.jpg", DEFAULT, DEFAULT, DEFAULT),
-(DEFAULT, "jose@gmail.com", "1234567", "1988-07-30", "30444555", "/images/users/foto-jose.jpg", DEFAULT, DEFAULT, DEFAULT),
-(DEFAULT, "evasosa@gmail.com", "12345678", "1995-03-10", "30555666", "/images/users/foto-eva.jpg", DEFAULT, DEFAULT, DEFAULT);
+VALUES (DEFAULT, "genaro" ,"genarogonzales@gmail.com", "1234", "2005-05-05", '44123771',"/images/users/foto-genaro.jpg",DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "miguel", "miguel@gmail.com", "12345", "1985-08-20", "30222333", "/images/users/foto-miguel.jpg", DEFAULT, DEFAULT, DEFAULT),
+(DEFAULT, "pato", "pato@gmail.com", "123456", "1992-01-15", "30333444", "/images/users/foto-pato.jpg", DEFAULT, DEFAULT, DEFAULT),
+(DEFAULT, "jose", "jose@gmail.com", "1234567", "1988-07-30", "30444555", "/images/users/foto-jose.jpg", DEFAULT, DEFAULT, DEFAULT),
+(DEFAULT, "eva", "evasosa@gmail.com", "12345678", "1995-03-10", "30555666", "/images/users/foto-eva.jpg", DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos
 VALUES (DEFAULT, "/images/products/purosangue.jpg", "Ferrari purosangue", "SUV deportivo, potente y lujoso.",1,DEFAULT,DEFAULT,DEFAULT),

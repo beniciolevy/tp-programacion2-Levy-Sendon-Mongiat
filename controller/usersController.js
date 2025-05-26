@@ -41,10 +41,11 @@ const usersController = {
         db.Usuario.findOne({ where: { email: req.body.email } })
             .then(function (usuarioExistente) {
                 if (usuarioExistente) {
-                    return res.render("register", { error: "El email ya está registrado." });
+                    res.render('register', {error: "el usuario ya existe"})
                 }
                 let passEncriptada = bcrypt.hashSync(req.body.contrasenia, 10);
                 db.Usuario.create({
+                    usuario: req.body.usuario,
                     email: req.body.email,
                     contrasenia: passEncriptada,
                     fechaNacimiento: req.body.fechaNacimiento,
@@ -56,12 +57,10 @@ const usersController = {
                     })
                     .catch(function (error) {
                         console.log(error);
-                        res.render("register", { error: "Error al crear el usuario." });
                     });
             })
             .catch(function (error) {
                 console.log(error);
-                return res.render("register", { error: "Error en la base de datos." });
             });
     },
     profile: function (req, res) {
