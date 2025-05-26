@@ -7,7 +7,7 @@ const usersController = {
         if (req.session.usuario != undefined) {
             return res.redirect("/")
         }
-        res.render("login")
+        res.render("login", {error: null})
     },
     processLogin: function (req, res) {
         var email = req.body.emailLog;

@@ -8,7 +8,7 @@ router.post('/processLogin', usersController.processLogin);
 router.get('/register', usersController.register);
 router.post('/newuser', usersController.create);
 router.get('/search-results', usersController.searchResults);
-router.get('/logout', usersController.logout);
+router.post('/logout', usersController.logout);
 
 
 module.exports = router;

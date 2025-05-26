@@ -30,6 +30,7 @@
 				<h2 class="products-title">Ingresar</h2>
 			</div>
 			<!-- Show the "ultimos" products -->
+			 
 			<form class="form-login" action="/users/processLogin" method="POST">
 				<div>
 					<label for="email">Email:</label>
@@ -45,10 +46,17 @@
 					<input type="checkbox" name="recordarme" id="recordarme">
 				</div>
 				<div>
-					<a href="/"><button type="button">Login</button> </a>
+					<button type="submit">Login</button>
 				</div>
 
+				<% if (error) { %>
+				<div style="color: red">
+					<h2><%= error %> </h2>
+				</div>
+				<%}%>
 			</form>
+
+			
 
 
 
