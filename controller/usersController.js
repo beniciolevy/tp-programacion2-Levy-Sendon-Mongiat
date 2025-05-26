@@ -24,11 +24,13 @@ const usersController = {
                 if (!passwordValida) {
                     return res.render("login", { error: "La contraseña es incorrecta" })
                 }
-                // Como es cascada si cumple los dos ifs te almacena la sesion del usuario en la variable usuario, dsp se usa en la cookie
+                // Como es cascada si cumple los dos ifs te almacena la sesion del usuario en la variable usuario, 
+                // dsp se usa en la cookie y en los otros lados para llenar por ejemplo el headerLogueado
+                
                 req.session.usuario = usuario;
 
                 if (recordarme) {
-                    res.cookie("usuario", usuario.email, { maxAge: 60000000 });
+                    res.cookie("usuario", usuario.email, { maxAge: 600000000 });
                 }
 
 

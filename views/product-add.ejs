@@ -19,8 +19,12 @@
 
 <body>
 	<!-- Header -->
-	<%- include("./partials/headerLogueado") %>
-
+	<% if (usuario != undefined) { %>
+		<%- include("./partials/headerLogueado", { usuario: usuario }) %>
+	  <% } else { %>
+		<%- include("./partials/header") %>
+	  <% } %>
+	  
 	<!-- /Header -->
 
 	<!-- Novedades -->

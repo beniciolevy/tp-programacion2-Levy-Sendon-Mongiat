@@ -3,11 +3,11 @@ const datos = require("../db/index");
 
 const productosController = {
     product: function(req,res){
-        res.render("product", {productos: datos.productos})
+        res.render("product", {productos: datos.productos, usuario: req.session.usuario})
     },
 
     addProduct: function (req, res) {
-        res.render('product-add', {usuario: datos.usuario} );
+        res.render('product-add', {usuario: req.session.usuario} );
       },
 
     productDetail: function(req,res){
@@ -20,7 +20,7 @@ const productosController = {
                 producto = datos.productos[i];
                 break; 
             }
-        }        res.render("product", {producto});
+        }        res.render("product", {producto, usuario: req.session.usuario});
     }
 }
 module.exports = productosController;
