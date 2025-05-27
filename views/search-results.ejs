@@ -37,16 +37,11 @@
 
 	<h3>	
 		<ul class="resultados-busqueda">
-			<li><a href="/product/id/1">Ferrari purosangue</a></li>
-			<li><a href="/product/id/2">BMW X6M</a></li>
-			<li><a href="/product/id/3">Lamborghini Urus</a></li>
-			<li><a href="/product/id/4">Mercedes Clase G</a></li>
-			<li><a href="/product/id/5">McLaren 765LT</a></li>
-			<li><a href="/product/id/6">Ferrari 812 Competizione</a></li>
-			<li><a href="/product/id/7">Ferrari 488 Pista</a></li>
-			<li><a href="/product/id/8">Koenigsegg One:1</a></li>
-			<li><a href="/product/id/9">Ferrari SF90 Stradale</a></li>
-			<li><a href="/product/id/10">Lamborghini Aventador SVJ</a></li>
+		 <% for (let i=0; i < productos.length; i++ ) {%>
+     		<li> <a href="/product/id/<%= productos[i].id %>"> <%= productos[i].nombreProducto %>  </a></li> 
+
+     <% } %>
+			
 		</ul> 
 	</h3>
 

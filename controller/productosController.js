@@ -32,7 +32,8 @@ const productosController = {
         let busqueda = req.query.search
         // Esto busca en la base de datos los productos que se parezcan a lo que hay en "busqueda"
         db.Producto.findAll({
-            where: [{nombreProducto: {[op.like] : "%" + busqueda + "%"}}]
+            where: [
+                {nombreProducto: {[op.like] : "%" + busqueda + "%"}}]
         })
 
         .then(function(productos){
