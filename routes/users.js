@@ -7,7 +7,6 @@ router.get('/login', usersController.login);
 router.post('/processLogin', usersController.processLogin);
 router.get('/register', usersController.register);
 router.post('/newuser', usersController.create);
-router.get('/search-results', usersController.searchResults);
 router.post('/logout', usersController.logout);
 
 
