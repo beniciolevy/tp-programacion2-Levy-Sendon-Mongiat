@@ -38,7 +38,8 @@
 	<h3>	
 		<ul class="resultados-busqueda">
 		 <% for (let i=0; i < productos.length; i++ ) {%>
-     		<li> <a href="/product/id/<%= productos[i].id %>"> <%= productos[i].nombreProducto %>  </a></li> 
+     		<li> <a href="/product/id/<%= productos[i].id %>"> <%= productos[i].nombreProducto %>  </a> <h6> Publicado por:   </h6></li>
+		
 
      <% } %>
 			

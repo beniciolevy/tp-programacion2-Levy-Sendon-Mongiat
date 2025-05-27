@@ -76,6 +76,20 @@ const usersController = {
         res.render("profile", { usuario: req.session.usuario, productos: [] })
     },
    
+// Controlador del profile del usuario que tiene el ID igual en el buscador que en la db
+    profileId: function(req, res){
+        let id = req.params.id;
+
+        db.Usuario.findByPk(id)
+        .then(function(usuario){
+
+            res.render("profile", {usuario: usuario});
+        })
+        .catch(function(error){
+            console.log(error);
+        })
+    },
+
     logout: function (req, res) {
         req.session.destroy(function (error) {
             if (error) {
