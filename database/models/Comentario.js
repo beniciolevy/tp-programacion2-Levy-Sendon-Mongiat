@@ -10,7 +10,7 @@ module.exports = function(sequelize, dataTypes){
             autoIncrement: true,
             primaryKey: true,
         },
-        texto:{
+        textoComentario:{
             type: dataTypes.TEXT,
             allowNull: false,
         },
@@ -62,3 +62,4 @@ module.exports = function(sequelize, dataTypes){
 
    return Comentario;
 };
+

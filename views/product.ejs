@@ -61,10 +61,17 @@
 							
 
 						</section>
-						<form class="form" action="" method="POST">
-							<input class="form-input" type="text" value="" placeholder="Agregar comentario">
-							<button type="submit" class="buy-now-button">Agregar Comentario</button>
-						</form>
+						<% if (usuario != undefined) { %>
+							<form class="form" action="/product/comentar" method="POST">
+								<input class="form-input" type="text" value="" placeholder="Agregar comentario" name="comentario">
+								<input type="hidden" value="<%= idProduct %>" name="idProduct">
+								<input type="hidden" value="<%= usuario.id %>" name="idUser">
+								<button type="submit" class="buy-now-button">Agregar Comentario</button>
+							</form>
+						  <% } else { %>
+								<p>Para poder comentar debes loguearte</p>
+						  <% } %>
+						
 						<hr>
 					</div>
 				</div>

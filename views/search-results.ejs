@@ -35,17 +35,35 @@
 			</div>
 			<!-- Show the "ultimos" products -->
 
-	<h3>	
-		<ul class="resultados-busqueda">
-		 <% for (let i=0; i < productos.length; i++ ) {%>
-     		<li> <a href="/product/id/<%= productos[i].id %>"> <%= productos[i].nombreProducto %>  </a> <h6> Publicado por:   </h6></li>
 		
+			<% if(productos.length !=0 ){ %>
+				<% for (let i = 0; i < productos.length; i++) {
+					const producto = productos[i]; %>
+			   <div class="col-12 col-sm-6 col-lg-3">
+				   <section class="product-box">
+					   <a href="/product/id/<%= producto.id  %>">
+						   <figure class="product-box_image">
+							   <img src="<%= producto.foto %>" alt="<%= producto.nombreProducto %>"/>
+						   </figure>
+						   <article class="product-box_data">
+							   <h2><%= producto.nombreProducto %> </h2>
+							   <p><%= producto.descripcionProducto %></p>
+							   <p>Comentarios: <%= producto.comentarios.length %></p>
+							   <a href="/users/profile/<%=producto.usuario.id%>"><%=producto.usuario.email%></a>
+						   </article>
+					   </a>
+				   </section>
+				   
+			   </div>
+			   <% } %>
+				
+			<% }else {%>
+				<p>No se encontraron resultados para <%= search %></p>
+				<% } %>
 
-     <% } %>
 			
-		</ul> 
-	</h3>
-
+			
+		 
 
 	<!-- footer -->
 	<%- include("./partials/footer") %>
