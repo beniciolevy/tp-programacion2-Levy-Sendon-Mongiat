@@ -28,17 +28,17 @@
 	<!-- Datos del usuario -->
 	<section class="info-usuario container products-wrapper">
 		<div class="row">
-		<%	if (usuario) { %>
+		<%	if (perfil) { %>
 			<div class="img-container offset-3 col-2">
-				<% if (usuario.fotoPerfil){ %>
-					<img src=<%=usuario.fotoPerfil%> alt="foto de perfil" class="foto-perfil">
+				<% if (perfil.fotoPerfil){ %>
+					<img src=<%=perfil.fotoPerfil%> alt="foto de perfil" class="foto-perfil">
 				<% } else {%>
 					<img src="/images/users/default-image.png" alt="foto por defecto" class="foto-perfil">
 				<% } %>
 			</div>
 			<div class="data-container col-6">
 				<div class="d-flex align-items-center ">
-					<h1 class="main-title"><%=usuario.usuario%>
+					<h1 class="main-title"><%=perfil.usuario%>
 						<a href="/profile-edit">
 							<i class="fas fa-cog"></i>
 						</a>
@@ -47,7 +47,7 @@
 				</div>
 				
 				<div>
-					<%=usuario.email%>
+					<%=perfil.email%>
 				</div>
 
 				<div>
