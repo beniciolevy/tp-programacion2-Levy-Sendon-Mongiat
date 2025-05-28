@@ -83,7 +83,7 @@ const usersController = {
         db.Usuario.findByPk(id)
         .then(function(usuario){
 
-            res.render("profile", {usuario: usuario});
+            res.render("profile", {usuario: usuario, productos: []});
         })
         .catch(function(error){
             console.log(error);
