@@ -35,10 +35,10 @@
 			</div>
 
 
-			<form class="form-agregarPoducto"  action="/product/add" method="GET">
+			<form class="form-agregarPoducto"  action="/product/createProduct" method="POST">
 				<div>
 				  <label for="imagen">Imagen del producto:</label>
-				  <input type="file"  name="imagen" id="imagen">
+				  <input type="text"  name="imagen" id="imagen">
 				</div>
 			  
 				<div>
@@ -53,7 +53,7 @@
 			  
 				<div>
 				  
-				  <a href="/"><button type="submit">Cargar producto</button> </a>
+				  <button type="submit">Cargar producto</button>
 				</div>
 			  </form>
 

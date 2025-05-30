@@ -15,6 +15,23 @@ const productosController = {
         res.render('product-add', {usuario: req.session.usuario} );
       },
 
+    createProduct: function(req,res){
+
+        db.Producto.create({
+            foto: req.body.imagen,
+            nombreProducto: req.body.nombre,
+            descripcionProducto: req.body.descripcion,
+            idUsuario: req.session.usuario.id,
+
+        })
+
+    .then(function(producto){
+        let idLogueado = req.session.usuario.id;
+        res.redirect(`/users/profile/${idLogueado}`)
+    })
+
+    },
+
     productDetail: function(req,res){
         const id = req.params.id;
        
