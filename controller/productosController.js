@@ -44,14 +44,13 @@ createProduct: function(req, res) {
 productDetail: function(req, res) {
     const id = req.params.id;
 
-    let producto
-
-    for (let i = 0; i < datos.productos.length; i++) {
-        if (datos.productos[i].id == id) {
-            producto = datos.productos[i];
-            break;  //hacer find one y relaciones//
-        }
-    } res.render("product", { producto, usuario: req.session.usuario, idProduct: id });
+    db.Producto.findByPk(id, {
+        include: [   {association: "usuario"},   {association: "comentarios", include: ["usuario"]} ]
+    })
+    
+    .then(function(producto){
+        res.render("product",{ producto: producto, usuario: req.session.usuario, idProduct: id } )
+    })
 },
 
 // Controlador de barra de busqueda 
