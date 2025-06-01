@@ -82,7 +82,7 @@ const usersController = {
         let usuarioLogueado = req.session.usuario
 
         db.Usuario.findByPk(id, {
-            include: [{ association: "productos" }]
+            include: [{ association: "productos" , include: [ {association: 'comentarios' }]}]
         })
             .then(function (perfil) {
                 if (!perfil){

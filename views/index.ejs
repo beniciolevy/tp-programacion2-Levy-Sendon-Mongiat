@@ -41,19 +41,26 @@
 
 			<!-- Show the "ultimos" products -->
 			<% for (let i = 0; i < productos.length; i++) {
-				 const producto = productos[i]; %>
+				 const producto = productos[i]; 
+				 const usuarioCargador = producto.usuario; %>
 			<div class="col-12 col-sm-6 col-lg-3">
 				<section class="product-box">
 					<a href="/product/id/<%= producto.id  %>">
 						<figure class="product-box_image">
-							<img src="<%= producto.imagen %>" alt="<%= producto.nombre %>"/>
+							<img src="<%= producto.foto %>" alt="<%= producto.nombreProducto %>"/>
 						</figure>
 						<article class="product-box_data">
-							<h2><%= producto.nombre %> </h2>
-							<p><%= producto.descripcion %></p>
+							<h2><%= producto.nombreProducto %> </h2>
+							<p><%= producto.descripcionProducto %></p>
 							<p>Comentarios: <%= producto.comentarios.length %></p>
 						</article>
 					</a>
+					<% if (usuarioCargador) { %>
+						<p> Publicado por:
+							<a href="/users/profile/<%= usuarioCargador.id %>"><%=usuarioCargador.email %></a>
+							</p>
+							<% } %>
+					
 				</section>
 				
 			</div>
