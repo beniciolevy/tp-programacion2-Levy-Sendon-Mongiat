@@ -7,7 +7,7 @@ const usersController = {
         if (req.session.usuario != undefined) {
             return res.redirect("/")
         }
-        res.render("login", {error: null})
+        res.render("login", { error: null })
     },
     processLogin: function (req, res) {
         var email = req.body.emailLog;
@@ -26,7 +26,7 @@ const usersController = {
                 }
                 // Como es cascada si cumple los dos ifs te almacena la sesion del usuario en la variable usuario, 
                 // dsp se usa en la cookie y en los otros lados para llenar por ejemplo el headerLogueado
-                
+
                 req.session.usuario = usuario;
 
                 if (recordarme) {
@@ -75,21 +75,25 @@ const usersController = {
     profile: function (req, res) {
         res.render("profile", { usuario: req.session.usuario, productos: [] })
     },
-   
-// Controlador del profile del usuario que tiene el ID igual en el buscador que en la db
-    profileId: function(req, res){
+
+    // Controlador del profile del usuario que tiene el ID igual en el buscador que en la db
+    profileId: function (req, res) {
         let id = req.params.id;
         let usuarioLogueado = req.session.usuario
 
-        db.Usuario.findByPk(id)
-        .then(function(perfil){
-
-            res.render("profile", {usuario: usuarioLogueado, perfil: perfil,  productos: []});
+        db.Usuario.findByPk(id, {
+            include: [{ association: "productos" }]
         })
-        .catch(function(error){
-            console.log(error);
-        })
-    },
+            .then(function (perfil) {
+                if (!perfil){
+                    return res.send("Usuario no encontrado");
+                }
+                res.render("profile", { usuario: usuarioLogueado, perfil: perfil, productos: perfil.productos });
+    })
+        .catch(function (error) {
+        console.log(error);
+    });
+},
 
     logout: function (req, res) {
         req.session.destroy(function (error) {
