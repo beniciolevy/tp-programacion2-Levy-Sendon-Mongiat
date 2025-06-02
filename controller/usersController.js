@@ -42,7 +42,7 @@ const usersController = {
 
     },
     register: function (req, res) {
-        res.render("register")
+        res.render("register", { error: "" })
     },
     create: function (req, res) {
 
@@ -51,7 +51,12 @@ const usersController = {
                 if (usuarioExistente) {
                     return res.render('register', { error: "el usuario ya existe" })
                 }
+
+                if (req.body.contrasenia.length<3){
+                    return res.render("register", {error: "La contraseña debe tener al menos 3 caracteres"})
+                }
                 let passEncriptada = bcrypt.hashSync(req.body.contrasenia, 10);
+                
                 db.Usuario.create({
                     usuario: req.body.usuario,
                     email: req.body.email,
@@ -60,12 +65,12 @@ const usersController = {
                     dni: req.body.dni,
                     fotoPerfil: req.body.fotoPerfil
                 })
-                    .then(function () {
-                        res.redirect("/users/login");
+                .then(function () {
+                    res.redirect("/users/login");
                     })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
+                .catch(function (error) {
+                    console.log(error);
+                });
             })
             .catch(function (error) {
                 console.log(error);

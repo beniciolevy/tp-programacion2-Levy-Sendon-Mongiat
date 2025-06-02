@@ -71,7 +71,10 @@
 								<button type="submit" class="buy-now-button">Agregar Comentario</button>
 							</form>
 						  <% } else { %>
-								<p>Para poder comentar debes loguearte</p>
+
+							<form class="form" action="/users/login" method="GET">
+								<button type="submit" class="buy-now-button">Agregar Comentario</button>
+							</form>	
 						  <% } %>
 						
 						<hr>
