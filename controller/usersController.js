@@ -19,7 +19,7 @@ const usersController = {
                 if (usuario == undefined) {
                     return res.render("login", { error: "El email no está registrado." });
                 }
-                // ACA compara la contraseña logueada con la de la base de datos, si son distintas (false) te returnea el error
+                // Aca compara la contraseña logueada con la de la base de datos, si son distintas (false) te returnea el error
                 var passwordValida = bcrypt.compareSync(password, usuario.contrasenia);
                 if (!passwordValida) {
                     return res.render("login", { error: "La contraseña es incorrecta" })
@@ -76,12 +76,10 @@ const usersController = {
                 console.log(error);
             });
     },
-    // Controlador de profile.ejs
     profile: function (req, res) {
         res.render("profile", { usuario: req.session.usuario, productos: [] })
     },
 
-    // Controlador del profile del usuario que tiene el ID igual en el buscador que en la db
     profileId: function (req, res) {
         let id = req.params.id;
         let usuarioLogueado = req.session.usuario

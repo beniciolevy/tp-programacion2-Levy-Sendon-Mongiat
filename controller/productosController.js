@@ -1,4 +1,3 @@
-const datos = require("../db/index");
 let db = require("../database/models");
 let op = db.Sequelize.Op;
 
@@ -51,11 +50,8 @@ productDetail: function(req, res) {
     })
 },
 
-// Controlador de barra de busqueda 
 searchResults: function (req, res) {
-    // Defino lo que busco el usuario con la variable busqueda
     let busqueda = req.query.search
-    // Esto busca en la base de datos los productos que se parezcan a lo que hay en "busqueda"
     db.Producto.findAll({
         where: [
             { nombreProducto: { [op.like]: "%" + busqueda + "%" } }],
@@ -68,7 +64,6 @@ searchResults: function (req, res) {
 
 },
 comentar: function(req, res) {
-    // res.send (req.body)//
     db.Comentario.create({
         textoComentario: req.body.comentario,
         idProducto: req.body.idProduct,
@@ -78,8 +73,6 @@ comentar: function(req, res) {
             res.redirect(`/product/id/${req.body.idProduct}`)
         })
 }
-
-
 
 }
 module.exports = productosController;

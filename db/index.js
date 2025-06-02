@@ -1,6 +1,3 @@
-
-//Modulo de datos de los productos
-
 let datos = {
     productos: [
         {
