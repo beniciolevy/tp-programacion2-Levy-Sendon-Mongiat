@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="/stylesheets/app.css">
 	</head>
 	<body>
-		<!-- Header -->
+		<!-- Header que cambia según si hay usuario logueado o no  -->
 	<% if (usuario != undefined) { %>
 		<%- include("./partials/headerLogueado", { usuario: usuario }) %>
 	  <% } else { %>
@@ -45,11 +45,13 @@
 							<%=producto.descripcionProducto%></p>
 					</article>
 
-
+					<!-- Columna de comentarios -->
 					<div class="col-12 col-lg-4">
 						<section class="comments">
+							<!-- itera sobre los comentarios del producto -->
 							<% for (let i = 0; i < producto.comentarios.length; i++) { %>
 							<article>
+								<!-- foto de perfil del usuario que comento -->
 								<img src="/images/users/<%= producto.comentarios[i].usuario.fotoPerfil %> "alt="">
 								<div class="data">
 									<p class="user">
@@ -63,13 +65,17 @@
 							
 
 						</section>
+						<!-- si hay usuario logueado, se muestra el formulario para comentar -->
 						<% if (usuario != undefined) { %>
 							<form class="form" action="/product/comentar" method="POST">
 								<input class="form-input" type="text" value="" placeholder="Agregar comentario" name="comentario">
+								<!-- campos ocultos para pasar ID del producto y del usuario -->
 								<input type="hidden" value="<%= idProduct %>" name="idProduct">
 								<input type="hidden" value="<%= usuario.id %>" name="idUser">
+								<!-- boton de envio -->
 								<button type="submit" class="buy-now-button">Agregar Comentario</button>
 							</form>
+							<!-- Si no hay usuario, se redirige al login al intentar comentar -->
 						  <% } else { %>
 
 							<form class="form" action="/users/login" method="GET">

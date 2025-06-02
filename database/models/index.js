@@ -13,6 +13,7 @@ let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
+  // Conexión con la base de datos usando los datos de config/config.js
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
@@ -36,6 +37,7 @@ Object.keys(db).forEach(modelName => {
     db[modelName].associate(db);
   }
 });
+// exporta sequelize y todos los modelos para usar en los controladores
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
