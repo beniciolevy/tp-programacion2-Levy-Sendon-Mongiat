@@ -48,16 +48,16 @@ VALUES (DEFAULT, "genaro" ,"genarogonzales@gmail.com", "1234", "2005-05-05", '44
 (DEFAULT, "eva", "evasosa@gmail.com", "12345678", "1995-03-10", "30555666", "/images/users/foto-eva.jpg", DEFAULT, DEFAULT, DEFAULT);
 
 INSERT INTO productos
-VALUES (DEFAULT, "/images/products/purosangue.jpg", "Ferrari purosangue", "SUV deportivo, potente y lujoso.",1,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/bmw-x6m.jpg", "BMW X6M", "SUV coupé, potente y con un diseño agresivo.",2,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/Lamborghini_Urus_.jpg", "Lamborghini Urus", "SUV Lamborghini, veloz y llamativo.",3,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/gwagon.jpg", "Mercedes Clase G", "SUV icónico, robusto y elegante.",4,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/765lt.jpg", "McLaren 765LT", "Super ligero, brutalmente rapido y enfocado en pista.",5,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/812competizione.jpg", "Ferrari 812 Competizione", "Potente, exclusivo y diseñado para la perfección.",1,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/ferraripista.jpg", "Ferrari 488 Pista", "Aerodinamico, agresivo y pensado para el rendimiento.",2,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/koenigsegg.jpg", "Koenigsegg One:1", "Hiperauto extremo, revolucionario y ultraligero.",3,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/sf90.jpg", "Ferrari SF90 Stradale", "Híbrido, innovador y con potencia sin igual.",4,DEFAULT,DEFAULT,DEFAULT),
-(DEFAULT, "/images/products/svj.jpg", "Lamborghini Aventador SVJ", "Radical, imponente y diseñado para romper récords.",5,DEFAULT,DEFAULT,DEFAULT);
+VALUES (DEFAULT, "purosangue.jpg", "Ferrari purosangue", "SUV deportivo, potente y lujoso.",1,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "bmw-x6m.jpg", "BMW X6M", "SUV coupé, potente y con un diseño agresivo.",2,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "Lamborghini_Urus_.jpg", "Lamborghini Urus", "SUV Lamborghini, veloz y llamativo.",3,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "gwagon.jpg", "Mercedes Clase G", "SUV icónico, robusto y elegante.",4,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "765lt.jpg", "McLaren 765LT", "Super ligero, brutalmente rapido y enfocado en pista.",5,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "812competizione.jpg", "Ferrari 812 Competizione", "Potente, exclusivo y diseñado para la perfección.",1,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "ferraripista.jpg", "Ferrari 488 Pista", "Aerodinamico, agresivo y pensado para el rendimiento.",2,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "koenigsegg.jpg", "Koenigsegg One:1", "Hiperauto extremo, revolucionario y ultraligero.",3,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "sf90.jpg", "Ferrari SF90 Stradale", "Híbrido, innovador y con potencia sin igual.",4,DEFAULT,DEFAULT,DEFAULT),
+(DEFAULT, "svj.jpg", "Lamborghini Aventador SVJ", "Radical, imponente y diseñado para romper récords.",5,DEFAULT,DEFAULT,DEFAULT);
 
 
 INSERT INTO comentarios
