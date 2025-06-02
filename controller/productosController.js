@@ -1,7 +1,5 @@
 const datos = require("../db/index");
 let db = require("../database/models");
-const { Association } = require("sequelize");
-const { search } = require("../routes");
 let op = db.Sequelize.Op;
 
 
