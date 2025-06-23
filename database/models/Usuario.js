@@ -1,8 +1,7 @@
 module.exports = function(sequelize, dataTypes){
 
     //Definir un alias.
-    let alias = 'Usuario'; //Con este alias sequelize va a identificar internamente al archivo de modelo.
-
+    let alias = 'Usuario'; 
     //Describir la configuración de las columnas de la tabla
     let cols = {
         id:{
@@ -61,12 +60,10 @@ module.exports = function(sequelize, dataTypes){
 
 
    Usuario.associate = function(models){
-    // El usuario tiene muchos productos
     Usuario.hasMany(models.Producto, {
         as: "productos",
         foreignKey: "idUsuario"
     });
-    // el usuario tiene muchos comentarios
       Usuario.hasMany(models.Comentario, {
         as: "comentarios",
         foreignKey: "idUsuario"
